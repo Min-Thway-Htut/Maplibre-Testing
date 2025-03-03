@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic MapLibre</title>
+    <link rel="stylesheet" href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css">
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; }
+        #map { width: 100vh; height: 90vh; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px; margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+    <script>
+        var map = new maplibregl.Map({
+            container: 'map',
+            style: 'https://api.maptiler.com/maps/hybrid/style.json?key=cF0hpIzI5wzFJ9n1bvci',
+            center: [139.6917, 35.6895], // Longitude, Latitude
+            zoom: 10
+        });
+    </script>
+</body>
+</html>
